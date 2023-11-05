@@ -3,6 +3,11 @@
 
 Resource/Building focused demo, using MapBox and a mock/dummy local api to simulate existing building response data.
 
+**NOTE TO TEAM:**
+Like 99% of relevant code is in the /src/components/pages/HomePage/pageComponents/MapView.tsx file. That's where you'll see the demo implementation of Mapbox + plotting building/resource json data as map pin Markers + implementing a customized Map Popup on MARKER click.
+
+Additionally, in the /src/components/ directory, and in the /src/components/pages/HomePage/index.tsx file, you'll see some basic implementation of the design-system/UI/UX patterns I tend to use. Notes below in the "Other relevant info" section of this readme, but tldr = I use a design system architecture of zero-runtime css-in-jss tokens, then build a collection of headless components that use those tokens. PandaCSS is awesome here, and all the primitives in these demo files are just stock/default Panda "Patterns" (Flex, Box, VStack, etc).
+
 ## Getting Started
 
 First install dependencies with yarn:

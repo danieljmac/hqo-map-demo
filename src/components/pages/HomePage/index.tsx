@@ -14,10 +14,10 @@ export type HomePageProps = {
         direction={'column'}
         w={'full'}
         pt={'50px'}
+        px={'0px'}
         justifyContent={'center'}
         alignItems={'center'}
         gap={'20px'}
-        // h={'calc(100vh - 160px) !important'}
       >
         <VStack gap={'0px'}>
           <Text textStyle={'xl'} fontWeight={'700'} w={'fit-content'} flex={0}>
@@ -30,8 +30,8 @@ export type HomePageProps = {
 
         <Flex
           direction={{ base: 'column', md: 'row' }}
-          minH={'700px'}
-          w={'fit-content'}
+          px={{base: '15px', md: '20px', lg: '0px'}}
+          w={{base: 'full', md: 'full', lg: 'fit-content'}}
         >
           <MapView buildings={buildings} />
         </Flex>

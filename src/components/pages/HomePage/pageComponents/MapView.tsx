@@ -2,7 +2,7 @@
 
 import { Flex, Box, VStack  } from '@./styled-system/jsx'
 import { Text } from '@/components/Text'
-import { Building, NetworkCityZone } from '@/lib/schema'
+import { Building } from '@/lib/schema'
 import * as React from 'react'
 import { Map, MapRef, Marker, Popup } from 'react-map-gl'
 import { useMemo, useRef, useCallback, useState } from 'react'
@@ -23,12 +23,12 @@ type MapViewStateProps = {
 }
 
 export function MapView({ buildings }: ZoneMapProps) {
-  // const buildings = zone.buildings
-
-  // if (buildings.length == 0) return <></>
 
   //--------------------------------------
   //* DEFAULT VALUES
+  // Basically just set the lat+long center
+  // & defaultMapZoom to load the initial
+  // map state
   //--------------------------------------
   const defaultZoom = 13
   const defaultMapProps: MapViewStateProps = {
@@ -41,6 +41,10 @@ export function MapView({ buildings }: ZoneMapProps) {
 
   //--------------------------------------
   //* STATE VARS & REFS
+  // Setup your state vars for the view, plus
+  // refs to the Map, as well as refs to keep
+  // track of any selected/active markers/pins
+  // or popups.
   //--------------------------------------
   const [viewState, setViewState] = React.useState({
     longitude: defaultMapProps.center.longitude,
@@ -54,6 +58,9 @@ export function MapView({ buildings }: ZoneMapProps) {
 
   //--------------------------------------
   //* MAP HOOKS
+  // react-map-gl exposes a bunch more, but here
+  // are a couple funcs that we connect to some
+  // map hooks
   //--------------------------------------
   const onMove = React.useCallback(({ viewState }) => {
     setViewState(viewState)
@@ -65,6 +72,8 @@ export function MapView({ buildings }: ZoneMapProps) {
 
   //--------------------------------------
   //* MAP MARKERS
+  // Iterate through building/resource json data
+  // and add a <Marker> for each to the map (i.e. the red Pins)
   //--------------------------------------
   const organizedMapMarkers = () => {
     const markers = buildings.map((item) => {
@@ -90,6 +99,9 @@ export function MapView({ buildings }: ZoneMapProps) {
 
   //--------------------------------------
   //* POPUPS
+  // Create the custom Popup UI template we'll
+  // use to show the card when a location marker/pin
+  // is tapped
   //--------------------------------------
   function PopupElement({ popupInfo }) {
     return (
@@ -111,32 +123,39 @@ export function MapView({ buildings }: ZoneMapProps) {
   }
 
   //--------------------------------------
-  //* THE COMPONENT
+  //* THE ACTUAL COMPONENT
+  // Finally we create + render/return the
+  // actual Map component
   //--------------------------------------
   return (
-    <Box w={'700px'} borderRadius={'20px'} overflow={'hidden'}>
-      <Map
-        {...viewState}
-        mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-        mapStyle="mapbox://styles/mapbox/streets-v9"
-        ref={mapRef}
-        onMove={onMove}
-        onDragEnd={onMapLoad}
-        onLoad={onMapLoad}
-        style={{
-          display: 'inline-block',
-          width: '100%',
-          // borderRadius: '10px',
-          // WebkitBorderRadius: '10px',
-          borderCollapse: 'separate',
-          overflow: 'hidden',
-          WebkitMaskImage:
-            'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)',
-        }}
+    <Box
+        w={{ base: '100%', md: '100%', lg: '700px' }}
+        h={{ base: '500px', md: '700px', lg: '700px' }}
+        borderRadius={'20px'}
+        overflow={'hidden'}
+        boxShadow={'md'}
       >
-        {organizedMapMarkers()}
-        {popupInfo && <PopupElement popupInfo={popupInfo} />}
-      </Map>
-    </Box>
+        <Map
+          {...viewState}
+          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+          mapStyle="mapbox://styles/mapbox/streets-v9"
+          ref={mapRef}
+          onMove={onMove}
+          onDragEnd={onMapLoad}
+          onLoad={onMapLoad}
+          style={{
+            display: 'inline-block',
+            width: '100%',
+            height: '100%',
+            borderCollapse: 'separate',
+            overflow: 'hidden',
+            WebkitMaskImage:
+              'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)',
+          }}
+        >
+          {organizedMapMarkers()}
+          {popupInfo && <PopupElement popupInfo={popupInfo} />}
+        </Map>
+      </Box>
   )
 }
