@@ -3,22 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "panda codegen",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ark-ui/react": "^0.15.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/mapbox-gl": "^2.7.17",
+    "mapbox-gl": "^2.15.0",
+    "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.1"
+    "react-map-gl": "^7.1.6",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@pandacss/dev": "^0.17.5",
+    "@park-ui/panda-preset": "^0.20.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
     "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "eslint-config-next": "14.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5"
+  },
+  "resolutions": {
+    "@zag-js/store": "^0.19.1"
   }
 }

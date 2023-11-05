@@ -1,0 +1,202 @@
+{
+  "data": {
+    "zones": [
+      {
+        "id": "1",
+        "name": "Seaport",
+        "slug": "seaport",
+        "prefers_large_colspan": true,
+        "grid_colspan": 2,
+        "image_url": "http://localhost:3000/images/temp/boston-seaport.png",
+        "map_center": {
+          "latitude": "42.3538195",
+          "longitude": "-71.059648"
+        },
+        "map_zoom": 13,
+        "city": {
+          "id": "1",
+          "name": "Boston",
+          "slug": "boston",
+          "state": "MA"
+        },
+        "stats": [
+          {
+            "label": "Office Buildings",
+            "label_short": "Buildings",
+            "value": "116"
+          },
+          {
+            "label": "Amenities ",
+            "label_short": "Amenities",
+            "value": "1942"
+          },
+          {
+            "label": "Companies",
+            "label_short": "Companies",
+            "value": "326"
+          }
+        ],
+        "building_uuids": ["111", "222", "333", "444"],
+        "buildings": []
+      },
+      {
+        "id": "2",
+        "name": "DTX",
+        "slug": "dtx",
+        "prefers_large_colspan": false,
+        "grid_colspan": 1,
+        "image_url": "http://localhost:3000/images/temp/boston-dtx2.png",
+        "map_center": {
+          "latitude": "42.3538195",
+          "longitude": "-71.059648"
+        },
+        "map_zoom": 13,
+        "city": {
+          "id": "1",
+          "name": "Boston",
+          "slug": "boston",
+          "state": "MA"
+        },
+        "stats": [
+          {
+            "label": "Office Buildings",
+            "label_short": "Buildings",
+            "value": "116"
+          },
+          {
+            "label": "Amenities ",
+            "label_short": "Amenities",
+            "value": "1942"
+          },
+          {
+            "label": "Companies",
+            "label_short": "Companies",
+            "value": "326"
+          }
+        ],
+        "building_uuids": ["111", "222", "333", "444"],
+        "buildings": []
+      },
+      {
+        "id": "3",
+        "name": "Beacon Hill",
+        "slug": "beacon-hill",
+        "prefers_large_colspan": false,
+        "grid_colspan": 1,
+        "image_url": "http://localhost:3000/images/temp/boston-beacon-hill2.jpeg",
+        "map_center": {
+          "latitude": "42.3538195",
+          "longitude": "-71.059648"
+        },
+        "map_zoom": 13,
+        "city": {
+          "id": "1",
+          "name": "Boston",
+          "slug": "boston",
+          "state": "MA"
+        },
+        "stats": [
+          {
+            "label": "Office Buildings",
+            "label_short": "Buildings",
+            "value": "116"
+          },
+          {
+            "label": "Amenities ",
+            "label_short": "Amenities",
+            "value": "1942"
+          },
+          {
+            "label": "Companies",
+            "label_short": "Companies",
+            "value": "326"
+          }
+        ],
+        "building_uuids": ["111", "222", "333", "444"],
+        "buildings": []
+      },
+      {
+        "id": "4",
+        "name": "Fenway",
+        "slug": "fenway",
+        "prefers_large_colspan": true,
+        "grid_colspan": 2,
+        "image_url": "http://localhost:3000/images/temp/boston-fenway2.png",
+        "map_center": {
+          "latitude": "42.3538195",
+          "longitude": "-71.059648"
+        },
+        "map_zoom": 13,
+        "city": {
+          "id": "1",
+          "name": "Boston",
+          "slug": "boston",
+          "state": "MA"
+        },
+        "stats": [
+          {
+            "label": "Office Buildings",
+            "label_short": "Buildings",
+            "value": "116"
+          },
+          {
+            "label": "Amenities ",
+            "label_short": "Amenities",
+            "value": "1942"
+          },
+          {
+            "label": "Companies",
+            "label_short": "Companies",
+            "value": "326"
+          }
+        ],
+        "building_uuids": ["111", "222", "333", "444"],
+        "buildings": []
+      },
+      {
+        "id": "5",
+        "name": "Back Bay",
+        "slug": "back-bay",
+        "prefers_large_colspan": true,
+        "grid_colspan": 3,
+        "image_url": "http://localhost:3000/images/temp/boston-back-bay.png",
+        "map_center": {
+          "latitude": "42.3538195",
+          "longitude": "-71.059648"
+        },
+        "map_zoom": 13,
+        "city": {
+          "id": "1",
+          "name": "Boston",
+          "slug": "boston",
+          "state": "MA"
+        },
+        "stats": [
+          {
+            "label": "Office Buildings",
+            "label_short": "Buildings",
+            "value": "116"
+          },
+          {
+            "label": "Amenities ",
+            "label_short": "Amenities",
+            "value": "1942"
+          },
+          {
+            "label": "Companies",
+            "label_short": "Companies",
+            "value": "326"
+          }
+        ],
+        "building_uuids": ["111", "222", "333", "444"],
+        "buildings": []
+      }
+    ]
+  },
+  "total": 6,
+  "count": 6,
+  "paging": {
+    "previous": null,
+    "next": null
+  }
+}

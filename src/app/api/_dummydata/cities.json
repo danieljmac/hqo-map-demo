@@ -1,0 +1,46 @@
+{
+  "data": {
+    "cities": [
+      {
+        "id": "1",
+        "name": "Boston",
+        "slug": "boston",
+        "state": "MA",
+        "image_url": "http://localhost:3000/images/temp/city_hero_1.png",
+        "zones": [],
+        "zoneSlugs": [
+          "seaport",
+          "dtx",
+          "beacon-hill",
+          "fenway",
+          "back-bay",
+          "financial-district"
+        ]
+      },
+      {
+        "id": "2",
+        "name": "NYC (Coming soon)",
+        "slug": "nyc",
+        "state": "NY",
+        "image_url": "http://localhost:3000/images/temp/city_hero_1.png",
+        "zones": [],
+        "zoneSlugs": []
+      },
+      {
+        "id": "3",
+        "name": "San Diego (Coming soon)",
+        "slug": "san-diego",
+        "state": "CA",
+        "image_url": "http://localhost:3000/images/temp/city_hero_1.png",
+        "zones": [],
+        "zoneSlugs": []
+      }
+    ]
+  },
+  "total": 3,
+  "count": 3,
+  "paging": {
+    "previous": null,
+    "next": null
+  }
+}

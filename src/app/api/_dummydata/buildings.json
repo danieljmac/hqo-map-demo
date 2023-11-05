@@ -1,0 +1,292 @@
+{
+  "data": {
+    "buildings": [
+      {
+        "id": "1",
+        "uuid": "111",
+        "slug": "the-hive-boston",
+        "name": "The Hive",
+        "display_title": "The Hive",
+        "display_subtitle": "38 Chauncy St Boston, MA",
+        "description": "Great ideas come through collaboration, which is why 38 Chauncy Street offers a fully amenitized conference center to incubate your next great idea. \n\nHolds up to 6 people (comfortably 4).",
+        "type": "Small Conference Room",
+        "image_url": "https://www.thehiveworkspace.com/wp-content/uploads/The-Hive-Workspace-02082023_110720-1030x580.jpg",
+        "images": ["", ""],
+        "address": "38 Chauncy Street",
+        "city": "Boston",
+        "state": "MA",
+        "zipcode": "02111",
+        "street_number": "38",
+        "country": "United States",
+        "country_code": "US",
+        "capacity": 6,
+        "square_foot": 132872,
+        "manager_name": "Hines Realestate",
+        "manager_logo": "",
+        "manager_email": "tenantservices@synergy-inv.com",
+        "latitude": "42.3538195",
+        "longitude": "-71.059648",
+        "features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          }
+        ],
+        "photo_features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark",
+            "images": [
+              {
+                "id": "1",
+                "image_url": "",
+                "layout_pref": ""
+              },
+              {
+                "id": "2",
+                "image_url": "",
+                "layout_pref": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "uuid": "222",
+        "slug": "some-other-building-boston",
+        "name": "Some Other Building",
+        "display_title": "101 Tremont St.",
+        "display_subtitle": "Boston, MA",
+        "description": "Great ideas come through collaboration, which is why 38 Chauncy Street offers a fully amenitized conference center to incubate your next great idea. \n\nHolds up to 6 people (comfortably 4).",
+        "type": "Small Conference Room",
+        "image_url": "https://www.thehiveworkspace.com/wp-content/uploads/The-Hive-Workspace-02082023_110720-1030x580.jpg",
+        "images": ["", ""],
+        "address": "38 Chauncy Street",
+        "city": "Boston",
+        "state": "MA",
+        "zipcode": "02111",
+        "street_number": "38",
+        "country": "United States",
+        "country_code": "US",
+        "capacity": 6,
+        "square_foot": 132872,
+        "manager_name": "Hines Realestate",
+        "manager_logo": "",
+        "manager_email": "tenantservices@synergy-inv.com",
+        "latitude": "42.358095",
+        "longitude": "-71.054048",
+        "features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          }
+        ],
+        "photo_features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark",
+            "images": [
+              {
+                "id": "1",
+                "image_url": "",
+                "layout_pref": ""
+              },
+              {
+                "id": "2",
+                "image_url": "",
+                "layout_pref": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "uuid": "333",
+        "slug": "the-hive-boston",
+        "name": "The Hive",
+        "display_title": "The Hive",
+        "display_subtitle": "38 Chauncy St Boston, MA",
+        "description": "Great ideas come through collaboration, which is why 38 Chauncy Street offers a fully amenitized conference center to incubate your next great idea. \n\nHolds up to 6 people (comfortably 4).",
+        "type": "Small Conference Room",
+        "image_url": "https://www.thehiveworkspace.com/wp-content/uploads/The-Hive-Workspace-02082023_110720-1030x580.jpg",
+        "images": ["", ""],
+        "address": "38 Chauncy Street",
+        "city": "Boston",
+        "state": "MA",
+        "zipcode": "02111",
+        "street_number": "38",
+        "country": "United States",
+        "country_code": "US",
+        "capacity": 6,
+        "square_foot": 132872,
+        "manager_name": "Hines Realestate",
+        "manager_logo": "",
+        "manager_email": "tenantservices@synergy-inv.com",
+        "latitude": "42.3422195",
+        "longitude": "-71.049648",
+        "features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          }
+        ],
+        "photo_features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark",
+            "images": [
+              {
+                "id": "1",
+                "image_url": "",
+                "layout_pref": ""
+              },
+              {
+                "id": "2",
+                "image_url": "",
+                "layout_pref": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "uuid": "444",
+        "slug": "some-other-building-boston",
+        "name": "Some Other Building",
+        "display_title": "101 Tremont St.",
+        "display_subtitle": "Boston, MA",
+        "description": "Great ideas come through collaboration, which is why 38 Chauncy Street offers a fully amenitized conference center to incubate your next great idea. \n\nHolds up to 6 people (comfortably 4).",
+        "type": "Small Conference Room",
+        "image_url": "https://www.thehiveworkspace.com/wp-content/uploads/The-Hive-Workspace-02082023_110720-1030x580.jpg",
+        "images": ["", ""],
+        "address": "38 Chauncy Street",
+        "city": "Boston",
+        "state": "MA",
+        "zipcode": "02111",
+        "street_number": "38",
+        "country": "United States",
+        "country_code": "US",
+        "capacity": 6,
+        "square_foot": 132872,
+        "manager_name": "Hines Realestate",
+        "manager_logo": "",
+        "manager_email": "tenantservices@synergy-inv.com",
+        "latitude": "42.359195",
+        "longitude": "-71.065948",
+        "features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          },
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark"
+          }
+        ],
+        "photo_features": [
+          {
+            "id": "1",
+            "uuid": "kjlhj-dfg7-aa9kh-lllnh7",
+            "name": "The Cool Feature",
+            "description": null,
+            "icon": "xmark",
+            "images": [
+              {
+                "id": "1",
+                "image_url": "",
+                "layout_pref": ""
+              },
+              {
+                "id": "2",
+                "image_url": "",
+                "layout_pref": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "total": 4,
+  "count": 4,
+  "paging": {
+    "previous": null,
+    "next": null
+  }
+}

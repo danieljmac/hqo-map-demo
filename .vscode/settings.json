@@ -1,0 +1,25 @@
+{
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.codeActionsOnSave.rules": null,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
