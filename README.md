@@ -11,6 +11,12 @@ First install dependencies with yarn:
 yarn
 ```
 
+Then, create a MapBox account and generate a public mapbox access token. create a .env.local file in the root of the project and add the following variable:
+
+```env
+NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN="enter_your_mapbox_token_here"
+```
+
 Then, run the development server:
 
 ```bash
