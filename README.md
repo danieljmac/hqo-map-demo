@@ -27,3 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 * This uses MapBox to generate the map. IMO, way better than google maps.
 * Also uses react-map-gl, for convenience React focused implementation + usage of Mapbox GL (<https://github.com/visgl/react-map-gl>)
+* I also use a design system utilizing Panda-CSS for zero-runtime css-in-js, and a blend of headless components that tap into the pandacss design system tokens. Here in the demo, I have ArkUI components installed, but the primitives (Flex, Box, VStack, etc. are all just coming from the default PandaCSS patterns).
+  * PandaCSS: <https://panda-css.com/>
+  * ArkUI: <https://ark-ui.com/>
+  * ParkUI (some pre-built helpers blending Panda + Ark): <https://park-ui.com/>
