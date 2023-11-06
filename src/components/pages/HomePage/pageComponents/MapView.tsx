@@ -1,6 +1,6 @@
 'use client'
 
-import { Flex, Box, VStack  } from '@./styled-system/jsx'
+import { Flex, Box, VStack } from '@./styled-system/jsx'
 import { Text } from '@/components/Text'
 import { Building, Resource } from '@/lib/schema'
 import * as React from 'react'
@@ -34,15 +34,8 @@ type MapViewStateProps = {
 }
 
 export function MapView({
-  buildings
-  //resources
+  buildings, //resources
 }: MapViewProps) {
-
-  const resources = fetchAllResources().then((r) => {
-    console.dir('woof')
-    console.dir(r)
-  })
-
   //--------------------------------------
   //* DEFAULT VALUES
   // Basically just set the lat+long center
@@ -148,33 +141,33 @@ export function MapView({
   //--------------------------------------
   return (
     <Box
-        w={{ base: '100%', md: '100%', lg: '700px' }}
-        h={{ base: '400px', md: '700px', lg: '700px' }}
-        borderRadius={'20px'}
-        overflow={'hidden'}
-        boxShadow={'md'}
+      w={{ base: '100%', md: '100%', lg: '700px' }}
+      h={{ base: '400px', md: '700px', lg: '700px' }}
+      borderRadius={'20px'}
+      overflow={'hidden'}
+      boxShadow={'md'}
+    >
+      <Map
+        {...viewState}
+        mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+        mapStyle="mapbox://styles/mapbox/streets-v9"
+        ref={mapRef}
+        onMove={onMove}
+        onDragEnd={onMapLoad}
+        onLoad={onMapLoad}
+        style={{
+          display: 'inline-block',
+          width: '100%',
+          height: '100%',
+          borderCollapse: 'separate',
+          overflow: 'hidden',
+          WebkitMaskImage:
+            'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)',
+        }}
       >
-        <Map
-          {...viewState}
-          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-          mapStyle="mapbox://styles/mapbox/streets-v9"
-          ref={mapRef}
-          onMove={onMove}
-          onDragEnd={onMapLoad}
-          onLoad={onMapLoad}
-          style={{
-            display: 'inline-block',
-            width: '100%',
-            height: '100%',
-            borderCollapse: 'separate',
-            overflow: 'hidden',
-            WebkitMaskImage:
-              'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)',
-          }}
-        >
-          {organizedMapMarkers()}
-          {popupInfo && <PopupElement popupInfo={popupInfo} />}
-        </Map>
-      </Box>
+        {organizedMapMarkers()}
+        {popupInfo && <PopupElement popupInfo={popupInfo} />}
+      </Map>
+    </Box>
   )
 }

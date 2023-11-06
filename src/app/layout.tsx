@@ -34,7 +34,6 @@ export default function RootLayout({
         crossOrigin="anonymous"
       />
       <body className={`${inter.className} light`}>{children}</body>
-
     </html>
   )
 }
