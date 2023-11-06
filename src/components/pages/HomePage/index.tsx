@@ -2,7 +2,6 @@ import { Box, Flex, VStack } from '@./styled-system/jsx'
 import { Text } from '@/components/Text'
 import { Building, Resource } from '@/lib/schema'
 import { MapView } from './pageComponents/MapView'
-import build from 'next/dist/build'
 
 export type HomePageProps = {
   buildings: Building[]
