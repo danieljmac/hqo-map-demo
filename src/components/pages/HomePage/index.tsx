@@ -14,7 +14,7 @@ export type HomePageProps = {
         direction={'column'}
         w={'full'}
         pt={'50px'}
-        px={'0px'}
+        px={{base: '15px', md: '20px', lg: '0px'}}
         justifyContent={'center'}
         alignItems={'center'}
         gap={'20px'}
@@ -30,7 +30,6 @@ export type HomePageProps = {
 
         <Flex
           direction={{ base: 'column', md: 'row' }}
-          px={{base: '15px', md: '20px', lg: '0px'}}
           w={{base: 'full', md: 'full', lg: 'fit-content'}}
         >
           <MapView buildings={buildings} />

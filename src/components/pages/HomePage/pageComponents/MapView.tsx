@@ -11,7 +11,7 @@ import { MapPin1 } from '@/components/pages/HomePage/pageComponents/MapPin'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './map.css'
 
-export type ZoneMapProps = {
+export type MapViewProps = {
   buildings: Building[]
 }
 type MapViewStateProps = {
@@ -22,7 +22,7 @@ type MapViewStateProps = {
   zoom: number
 }
 
-export function MapView({ buildings }: ZoneMapProps) {
+export function MapView({ buildings }: MapViewProps) {
 
   //--------------------------------------
   //* DEFAULT VALUES
@@ -130,7 +130,7 @@ export function MapView({ buildings }: ZoneMapProps) {
   return (
     <Box
         w={{ base: '100%', md: '100%', lg: '700px' }}
-        h={{ base: '500px', md: '700px', lg: '700px' }}
+        h={{ base: '400px', md: '700px', lg: '700px' }}
         borderRadius={'20px'}
         overflow={'hidden'}
         boxShadow={'md'}
