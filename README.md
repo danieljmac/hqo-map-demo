@@ -1,7 +1,7 @@
 
 # HqO Map Demo
 
-Resource/Building focused demo, using MapBox and a mock/dummy local api to simulate existing building response data.
+Resource/Building focused Map demo, using MapBox and a mock/dummy local api to simulate existing building/resource response data.
 
 **NOTE TO TEAM:**
 Like 99% of relevant code is in the [/src/components/pages/HomePage/pageComponents/MapView.tsx](src/components/pages/HomePage/pageComponents/MapView.tsx) file. That's where you'll see the demo implementation of Mapbox + plotting building/resource json data as map pin Markers + implementing a customized Map Popup on MARKER click.

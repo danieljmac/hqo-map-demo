@@ -2,7 +2,7 @@
 
 import { Flex, Box, VStack  } from '@./styled-system/jsx'
 import { Text } from '@/components/Text'
-import { Building } from '@/lib/schema'
+import { Building, Resource } from '@/lib/schema'
 import * as React from 'react'
 import { Map, MapRef, Marker, Popup } from 'react-map-gl'
 import { useMemo, useRef, useCallback, useState } from 'react'
@@ -10,9 +10,20 @@ import mapboxgl from 'mapbox-gl'
 import { MapPin1 } from '@/components/pages/HomePage/pageComponents/MapPin'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './map.css'
+import { fetchAllResources } from '@/lib/api/api'
 
 export type MapViewProps = {
   buildings: Building[]
+  //--------------------------------------
+  //* SWITCHING TO RESOURCES INSTEAD OF BUILDINGS?
+  // If you want to use your resource api json structure instead of buildings, un-comment
+  // the line below to switch the prop here to resources, then also switch the fetch in
+  // the src/app/page.tsx file to fetch and pass resources. You'll likely need to make
+  // a few minor changes in this file, but that should be pretty quick and the type safety
+  // from the zod schema should show errors here in all the places where the data mapping
+  // doesn't match up
+  //--------------------------------------
+  // resources: Resource[]
 }
 type MapViewStateProps = {
   center: {
@@ -22,7 +33,15 @@ type MapViewStateProps = {
   zoom: number
 }
 
-export function MapView({ buildings }: MapViewProps) {
+export function MapView({
+  buildings
+  //resources
+}: MapViewProps) {
+
+  const resources = fetchAllResources().then((r) => {
+    console.dir('woof')
+    console.dir(r)
+  })
 
   //--------------------------------------
   //* DEFAULT VALUES

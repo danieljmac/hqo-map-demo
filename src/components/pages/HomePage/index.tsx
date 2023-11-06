@@ -1,14 +1,18 @@
 import { Box, Flex, VStack } from "@./styled-system/jsx"
 import { Text } from "@/components/Text"
-import { Building } from "@/lib/schema"
+import { Building, Resource } from "@/lib/schema"
 import { MapView } from "./pageComponents/MapView"
 import build from "next/dist/build"
 
 export type HomePageProps = {
     buildings: Building[]
+    // resources: Resource[]
   }
 
-  export async function HomePage({ buildings }: HomePageProps) {
+  export async function HomePage({
+    buildings
+    //resources
+  }: HomePageProps) {
     return (
       <Flex
         direction={'column'}
@@ -33,6 +37,7 @@ export type HomePageProps = {
           w={{base: 'full', md: 'full', lg: 'fit-content'}}
         >
           <MapView buildings={buildings} />
+          {/* <MapView resources={resources} /> */}
         </Flex>
       </Flex>
     )
